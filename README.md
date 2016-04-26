@@ -1,5 +1,5 @@
 # adi-axi-hdmi
-This repository contains the drivere for the Analog ADV7511 HDMI transmitter.
+This repository contains the driver for the Analog ADV7511 HDMI transmitter.
 
 The code in this repository originates from
 
