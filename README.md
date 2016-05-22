@@ -1,5 +1,6 @@
 # adi-axi-hdmi
-This repository contains the driver for the Analog ADV7511 HDMI transmitter.
+This repository contains the driver for the Analog ADV7511 HDMI transmitter. It addtitionally
+includes all dependend files needed for a port to Genode OS.
 
 The code in this repository originates from
 
