@@ -155,7 +155,7 @@ static const struct of_device_id adv7511_encoder_of_match[] = {
 };
 MODULE_DEVICE_TABLE(of, adv7511_encoder_of_match);
 
-static int axi_hdmi_platform_probe(struct platform_device *pdev)
+int axi_hdmi_platform_probe(struct platform_device *pdev)
 {
 	const struct of_device_id *id;
 	struct device_node *np = pdev->dev.of_node;
