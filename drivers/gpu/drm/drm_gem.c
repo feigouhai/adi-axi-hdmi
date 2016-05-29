@@ -39,7 +39,7 @@
 #include <drm/drmP.h>
 #include <drm/drm_vma_manager.h>
 #include <drm/drm_gem.h>
-#include "drm_internal.h"
+//#include "drm_internal.h"
 
 /** @file drm_gem.c
  *
