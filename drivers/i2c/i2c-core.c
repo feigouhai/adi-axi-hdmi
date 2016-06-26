@@ -944,7 +944,7 @@ static int i2c_check_mux_children(struct device *dev, void *addrp)
 
 static int i2c_check_addr_busy(struct i2c_adapter *adapter, int addr)
 {
-	struct i2c_adapter *parent = i2c_parent_is_i2c_adapter(adapter);
+/*	struct i2c_adapter *parent = i2c_parent_is_i2c_adapter(adapter);
 	int result = 0;
 
 	if (parent)
@@ -954,7 +954,9 @@ static int i2c_check_addr_busy(struct i2c_adapter *adapter, int addr)
 		result = device_for_each_child(&adapter->dev, &addr,
 						i2c_check_mux_children);
 
-	return result;
+	return result;*/
+
+	return 0;
 }
 
 /**
