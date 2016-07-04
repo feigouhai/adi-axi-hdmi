@@ -1872,8 +1872,8 @@ int i2c_register_driver(struct module *owner, struct i2c_driver *driver)
 	int res;
 
 	/* Can't register until after driver model init */
-	if (unlikely(WARN_ON(!i2c_bus_type.p)))
-		return -EAGAIN;
+//	if (unlikely(WARN_ON(!i2c_bus_type.p)))
+//		return -EAGAIN;
 
 	/* add the driver to the list of i2c drivers in the driver core */
 	driver->driver.owner = owner;
@@ -2036,7 +2036,7 @@ static struct notifier_block i2c_of_notifier = {
 extern struct notifier_block i2c_of_notifier;
 #endif /* CONFIG_OF_DYNAMIC */
 
-static int __init i2c_init(void)
+int __init i2c_init(void)
 {
 	int retval;
 
